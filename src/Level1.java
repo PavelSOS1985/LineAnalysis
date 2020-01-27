@@ -13,7 +13,6 @@ public class Level1 {
             if (line.charAt(i) == '*') {
                 if (countDots > 0) {
                     if (tempCount > 0 && tempCount != countDots) return false;
-                    if (i == lineLength - 1 && tempCount != countDots) return false;
                     if (countStars > 0 && tempCount != countDots) return false;
                     tempCount = countDots;
                     countDots = 0;
